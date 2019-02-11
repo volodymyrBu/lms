@@ -1,0 +1,23 @@
+<div class="sidebar-sticky">
+  <ul class="nav flex-column">
+    <li>
+      <button class="navbar-toggler" (click)="mouseClick()"><span><i class="fa fa-bars fa-1x"></i></span></button>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/learnerProfile']" routerLinkActive="active"><i class="fa fa-user-o fa-lg"></i><span
+          [ngClass]="visibility==true ? 'collapse':'collapse.show'">Profile</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/learnerPoe']" routerLinkActive="router-link-active" routerLinkActive="active"><i
+          class="fa fa-graduation-cap fa-lg"></i><span [ngClass]="visibility==true ? 'collapse':'collapse.show'">POE</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/learnerGradeBook']" routerLinkActive="active"><i class="fa fa-star fa-lg"></i><span
+          [ngClass]="visibility==true ? 'collapse':'collapse.show'">Grade Book</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/courses']" routerLinkActive="active"><i class="fa fa-tasks fa-lg"></i><span [ngClass]="visibility==true ? 'collapse':'collapse.show'">Courses</span></a>
+    </li>
+  </ul>
+</div>

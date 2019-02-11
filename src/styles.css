@@ -1,0 +1,41 @@
+html,body,.container-fluid, .stretch {
+  height: 100%;
+}
+
+*, *:hover, *:focus {
+  outline: none;
+}
+.navbar-toggler:focus{
+  outline: none;
+}
+.input-space {
+  padding-left: 15px;
+}
+
+.shadow{
+  box-shadow: 0 8px 35px rgba(29,29,31,.15);
+   border-left-width: .25rem;
+   border-left-color: #2ca2db;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 0rem !important;
+  color: #6c757d!important;
+}
+
+.fs-14{
+ font-size: 14px;
+}
+ul{
+  list-style-type: circle;
+}
+
+#avatar {
+  background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+  background-position: top center;
+  border-radius: 50%;
+}
