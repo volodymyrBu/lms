@@ -8,28 +8,48 @@
               <thead>
                 <tr>
                   <th scope="col">Course Name</th>
+                  <th scope="col">To-Do</th>
                   <th scope="col">Course-Code</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>Cover For Life</td>
+                  <td></td>
                   <td>LC14352</td>
                 </tr>
                 <tr>
                   <td>Funeral Cover Intro</td>
+                  <td></td>
                   <td>FC0001</td>
                 </tr>
                 <tr>
                   <td>Direct Selling</td>
+                  <td></td>
                   <td>DS3200</td>
+                </tr>
+                <tr>
+                  <td>Management</td>
+                  <td></td>
+                  <td>MH3200</td>
+                </tr>
+                <tr>
+                  <td>Consumer Protection Act</td>
+                  <td></td>
+                  <td>CPA3000</td>
+                </tr>
+                <tr>
+                  <td>Sales Academy</td>
+                  <td></td>
+                  <td>SA4005</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
         <div class="row mb-1 float-right" style="padding-right: 15px;">
-          <button type="button" class="btn btn-outline-success btn-sm" style="margin-right: 10px;">View Assignments</button>
+          <button type="button" class="btn btn-outline-success btn-sm" (click)="open(content)" style="margin-right: 10px;">View
+            Assignments</button>
           <button type="button" class="btn btn-outline-success btn-sm" style="margin-right: 10px;">View to Do</button>
           <button type="button" class="btn btn-outline-success btn-sm" style="margin-right: 10px;">Resources</button>
           <button type="button" class="btn btn-outline-success btn-sm">Courses Available</button>
@@ -38,3 +58,41 @@
     </div>
   </div>
 </div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Cover for life</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modalRef.close('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <ol>
+          <li>
+            The best unit of measurement for Life Cover is:
+            <div>A) Income</div>
+            <div>B) Ethnicity</div>
+            <div>C) Premium Paid</div>
+            <div>D) Salary</div>
+          </li>
+          <li>
+            Life Cover premiums for new clients who are much older:
+            <div>A) Should be cheaper</div>
+            <div>B) Should be more expensive</div>
+            <div>C) Should be the same</div>
+            <div>D) I don't know</div>
+          </li>
+          <li>
+            Life Cover is Cheaper in Coastal Regions:
+            <div>A) True</div>
+            <div>B) False</div>
+            <div>C) I can't tell</div>
+          </li>
+
+        </ol>
+      </div>
+    </form>
+  </div>
+</ng-template>

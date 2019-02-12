@@ -39,3 +39,7 @@ ul{
   background-position: top center;
   border-radius: 50%;
 }
+label{
+  font-size: 1rem;
+  font-weight: 500;
+}

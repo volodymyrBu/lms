@@ -2,10 +2,12 @@
 
 .sidebar-sticky{
     height: 100%;
-    background-color: #800080!important;
+    background-color: #442359!important;
     -webkit-box-shadow: 1px 0px 3px 0px rgba(99,99,99,1);
     -moz-box-shadow: 1px 0px 3px 0px rgba(99,99,99,1);
     box-shadow: 1px 0px 3px 0px rgba(99,99,99,1);
+    background: url("../../../assets/images/hollard-logo-1.png") bottom center no-repeat;
+    background-size: 5vh;
     }
 .nav-item{
 
@@ -27,7 +29,7 @@
     background-color: #efbbff;
 }
 .nav-item a:hover{
-    background-color:#d896ff;
+    background-color:#8f7b9b;
 }
 .nav-item>a>span{
     margin-left: 9px;

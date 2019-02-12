@@ -1,4 +1,4 @@
-<div class="sidebar-sticky">
+<div class="sidebar-sticky" *ngIf="login.visible">
   <ul class="nav flex-column">
     <li>
       <button class="navbar-toggler" (click)="mouseClick()"><span><i class="fa fa-bars fa-1x"></i></span></button>
@@ -17,7 +17,8 @@
           [ngClass]="visibility==true ? 'collapse':'collapse.show'">Grade Book</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" [routerLink]="['/courses']" routerLinkActive="active"><i class="fa fa-tasks fa-lg"></i><span [ngClass]="visibility==true ? 'collapse':'collapse.show'">Courses</span></a>
+      <a class="nav-link" [routerLink]="['/courses']" routerLinkActive="active"><i class="fa fa-tasks fa-lg"></i><span
+          [ngClass]="visibility==true ? 'collapse':'collapse.show'">Courses</span></a>
     </li>
   </ul>
 </div>

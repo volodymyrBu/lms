@@ -1,0 +1,38 @@
+<div class="row mt-5 justify-content-center align-items-center">
+  <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+    <div class="card shadow" style="background-color: #694f7a;">
+      <div class="card-body">
+        <div class="row mb-1">
+          <div class="col">
+            <img src="../../../assets/images/hollard-logo-1.svg" />
+          </div>
+
+        </div>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div class="row mb-1">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+              <label class="text-light" for="clientId">Login</label>
+              <div class="input-group input-group-sm">
+                <input type="text" class="form-control rounded-right" formControlName="userName" required>
+              </div>
+            </div>
+
+          </div>
+          <div class="row mb-1">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+              <label class="text-light" for="clientId">Password</label>
+              <div class="input-group input-group-sm">
+                <input type="text" class="form-control rounded-right" formControlName="password" required>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-1 float-right">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+              <button type="submit" class="btn btn-outline-light btn-sm">Login</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
