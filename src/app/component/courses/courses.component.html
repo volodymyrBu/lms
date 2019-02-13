@@ -50,9 +50,10 @@
         <div class="row mb-1 float-right" style="padding-right: 15px;">
           <button type="button" class="btn btn-outline-success btn-sm" (click)="open(content)" style="margin-right: 10px;">View
             Assignments</button>
-          <button type="button" class="btn btn-outline-success btn-sm" style="margin-right: 10px;">View to Do</button>
-          <button type="button" class="btn btn-outline-success btn-sm" style="margin-right: 10px;">Resources</button>
-          <button type="button" class="btn btn-outline-success btn-sm">Courses Available</button>
+          <button type="button" class="btn btn-outline-success btn-sm" (click)="viewToDo(toDo)" style="margin-right: 10px;">View
+            to Do</button>
+          <button type="button" class="btn btn-outline-success btn-sm" (click)="openResources(resources)" style="margin-right: 10px;">Resources</button>
+          <button type="button" class="btn btn-outline-success btn-sm" (click)="openCourses(courses)">Courses Available</button>
         </div>
       </div>
     </div>
@@ -92,6 +93,51 @@
           </li>
 
         </ol>
+      </div>
+    </form>
+  </div>
+</ng-template>
+<ng-template #toDo let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">To Do</h4>
+    <button type="button" class="close" aria-label="Close" (click)="toDoModalRef.close('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <img src="../../../assets/images/toDo.jpg" class="rounded mx-auto d-block" />
+      </div>
+    </form>
+  </div>
+</ng-template>
+<ng-template #resources let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Resources</h4>
+    <button type="button" class="close" aria-label="Close" (click)="resourcesModalRef.close('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <img src="../../../assets/images/resources.jpg" class="rounded mx-auto d-block" />
+      </div>
+    </form>
+  </div>
+</ng-template>
+<ng-template #courses let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Courses</h4>
+    <button type="button" class="close" aria-label="Close" (click)="coursesModalRef.close('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <img src="../../../assets/images/courses.jpg" class="rounded mx-auto d-block" />
       </div>
     </form>
   </div>
